@@ -1,2 +1,2 @@
 # freecodecamp-technical-documentation
-freecodecamp project responsive web design project
+freecodecamp responsive web design project
