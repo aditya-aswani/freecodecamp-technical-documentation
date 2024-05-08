@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-.sidebar {
+#navbar {
     height: 100%;
     width: 200px;
     position: fixed;
@@ -12,7 +12,7 @@
     left: 0;
 }
 
-.sidebar ul {
+#navbar ul {
     list-style-type: none;
     padding: 20px 0;
 
