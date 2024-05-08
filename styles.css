@@ -22,3 +22,12 @@
     margin-left: 220px;
     padding: 20px;
 }
+
+p {
+    margin-bottom: 15px;
+}
+
+code {
+    display: block;
+    margin-bottom: 15px;
+}
