@@ -25,8 +25,6 @@
                 <p>If you do much work on computers, eventually you find that there’s some task you’d like to automate. For example, you may wish to perform a search-and-replace over a large number of text files, or rename and rearrange a bunch of photo files in a complicated way. Perhaps you’d like to write a small custom database, or a specialized GUI application, or a simple game.</p>
 
                 <p>If you’re a professional software developer, you may have to work with several C/C++/Java libraries but find the usual write/compile/test/re-compile cycle is too slow. Perhaps you’re writing a test suite for such a library and find writing the testing code a tedious task. Or maybe you’ve written a program that could use an extension language, and you don’t want to design and implement a whole new language for your application.</p>
-
-                <code></code>
                 <ul>
                     <li></li>
                     <li></li>
@@ -41,24 +39,58 @@
                 <p>The Python interpreter is usually installed as /usr/local/bin/python3.12 on those machines where it is available; putting /usr/local/bin in your Unix shell’s search path makes it possible to start it by typing the command:</p>
                 <code>python3.12</code>
                 <p>to the shell. [1] Since the choice of the directory where the interpreter lives is an installation option, other places are possible; check with your local Python guru or system administrator. (E.g., /usr/local/python is a popular alternative location.)</p>
+                <p>On Windows machines where you have installed Python from the Microsoft Store, the python3.12 command will be available. If you have the py.exe launcher installed, you can use the py command. See Excursus: Setting environment variables for other ways to launch Python.</p>
+                <p>Typing an end-of-file character (Control-D on Unix, Control-Z on Windows) at the primary prompt causes the interpreter to exit with a zero exit status. If that doesn’t work, you can exit the interpreter by typing the following command: quit().</p>
             </section>
             <section class="main-section" id="An_Informal_Introduction_to_Python">
                 <header><h2>An Informal Introduction to Python</h2></header>
-                <p></p>
-                <code></code>
-                <p></p>
+                <p>In the following examples, input and output are distinguished by the presence or absence of prompts (>>> and …): to repeat the example, you must type everything after the prompt, when the prompt appears; lines that do not begin with a prompt are output from the interpreter. Note that a secondary prompt on a line by itself in an example means you must type a blank line; this is used to end a multi-line command.</p>
+                <p>You can toggle the display of prompts and output by clicking on >>> in the upper-right corner of an example box. If you hide the prompts and output for an example, then you can easily copy and paste the input lines into your interpreter.</p>
+                <p>Many of the examples in this manual, even those entered at the interactive prompt, include comments. Comments in Python start with the hash character, #, and extend to the end of the physical line. A comment may appear at the start of a line or following whitespace or code, but not within a string literal. A hash character within a string literal is just a hash character. Since comments are to clarify code and are not interpreted by Python, they may be omitted when typing in examples.</p>
+                <p>Some examples:</p>
+                <code># this is the first comment
+spam = 1  # and this is the second comment
+            # ... and now a third!
+text = "# This is not a comment because it's inside quotes."</code>
             </section>
             <section class="main-section" id="More_Control_Flow_Tools">
                 <header><h2>More Control Flow Tools</h2></header>
-                <p></p>
-                <code></code>
-                <p></p>
+                <p>As well as the while statement just introduced, Python uses a few more that we will encounter in this chapter.</p>
+                <p>Perhaps the most well-known statement type is the if statement. For example:</p>
+                <code>x = int(input("Please enter an integer: "))
+Please enter an integer: 42
+
+if x < 0:
+
+    x = 0
+
+    print('Negative changed to zero')
+
+elif x == 0:
+
+    print('Zero')
+
+elif x == 1:
+
+    print('Single')
+
+else:
+
+    print('More')
+
+
+More</code>
+                
             </section>
             <section class="main-section" id="Data_Structures">
                 <header><h2>Data Structures</h2></header>
-                <p></p>
-                <code></code>
-                <p></p>
+                <p>This chapter describes some things you’ve learned about already in more detail, and adds some new things as well.</p>
+                <p>The list data type has some more methods. Here are all of the methods of list objects:</p>
+                <p>list.append(x)</p>
+                <p>         Add an item to the end of the list. Equivalent to <code>a[len(a):] = [x].</code></p>
+                <p>list.extend(iterable)</p>
+                <p>         Extend the list by appending all the items from the iterable. Equivalent to <code>a[len(a):] = iterable.</code></p>
+
             </section>
         </main>
     </body>
