@@ -73,6 +73,10 @@ section ul li {
     margin-left: 50px;
 }
 
+.whitespace {
+    white-space: pre;
+}
+
 @media screen and (max-width: 600px) {
     body {
         font-size: 14px;
