@@ -41,6 +41,11 @@ p code {
     padding: 2px 4px;
 }
 
+section ul li {
+    margin-bottom: 5px;
+    margin-left: 50px;
+}
+
 @media screen and (max-width: 600px) {
     body {
         font-size: 14px;
